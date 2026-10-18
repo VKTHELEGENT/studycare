@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Medical &amp; Nursing Courses | Study Care Education Consultation</title>
+  <meta name="description" content="Explore admission guidance for MBBS, BSc Nursing, General Nursing (GNM), and Auxiliary Nurse Midwifery (ANM) with Study Care Education Consultation.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html#home" class="brand" aria-label="Study Care Education Consultation">
+      <img src="logo-horizontal.png" alt="Study Care Education Consultation Logo" class="brand-logo">
+    </a>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+    <nav id="primaryNav" aria-label="Primary navigation">
+      <div class="mobile-nav-header">
+        <img src="logo-horizontal.png" alt="Study Care" class="mobile-nav-logo">
+        <button type="button" class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#courses" class="active">Courses</a>
+      <a href="index.html#colleges">Colleges</a>
+      <a href="#apply">Apply</a>
+      <a href="index.html#contact">Contact</a>
+      <div class="mobile-nav-cta">
+        <a class="btn" href="#apply">Enquire Now</a>
+        <a class="btn-whatsapp-mobile" href="https://wa.me/919400941937?text=Hi%20Study%20Care,%20I%20would%20like%20to%20enquire%20about%20medical%20courses" target="_blank" rel="noopener">
+          <span>💬 WhatsApp Us</span>
+        </a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn header-btn" href="#apply">Enquire Now</a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Medical Hero / Header -->
+    <section class="page-banner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <a href="index.html#courses">Courses</a> <span>/</span> <b>Medical</b>
+      </div>
+      <p class="eyebrow">MEDICAL &amp; HEALTHCARE GUIDANCE</p>
+      <h1>Medical &amp; Nursing <em>Programs</em></h1>
+      <p class="banner-desc">
+        Take the confident step towards a noble healthcare career. We offer complete counseling and direct admission support for prestigious medical, nursing, and healthcare institutions across India and abroad.
+      </p>
+      <div class="banner-cta">
+        <a href="#courses-grid" class="btn">Explore 4 Courses ↓</a>
+        <a href="index.html#courses" class="btn-secondary">← Back to All Courses</a>
+      </div>
+    </section>
+
+    <!-- The 4 Course Boxes -->
+    <section id="courses-grid" class="section medical-section">
+      <div class="section-title-wrap">
+        <p class="eyebrow">SPECIALIZED ADMISSIONS</p>
+        <h2>Choose Your Medical Path</h2>
+        <p>Comprehensive admission assistance for these top 4 medical and healthcare courses.</p>
+      </div>
+
+      <div class="medical-grid">
+        <!-- Box 1: MBBS -->
+        <article class="med-box" id="box-mbbs" onclick="selectCourse('MBBS')">
+          <span class="med-icon">🩺</span>
+          <h3>MBBS</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('MBBS');">Enquire Now →</button>
+        </article>
+
+        <!-- Box 2: BSc Nursing -->
+        <article class="med-box" id="box-bsc-nursing" onclick="selectCourse('BSc Nursing')">
+          <span class="med-icon">👩‍⚕️</span>
+          <h3>BSc Nursing</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('BSc Nursing');">Enquire Now →</button>
+        </article>
+
+        <!-- Box 3: General Nursing (GNM) -->
+        <article class="med-box" id="box-gnm" onclick="selectCourse('General Nursing')">
+          <span class="med-icon">🏥</span>
+          <h3>General Nursing</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('General Nursing');">Enquire Now →</button>
+        </article>
+
+        <!-- Box 4: Auxiliary Nurse Midwifery (ANM) -->
+        <article class="med-box" id="box-anm" onclick="selectCourse('Auxiliary Nurse Midwifery')">
+          <span class="med-icon">👶</span>
+          <h3>Auxiliary Nurse Midwifery</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('Auxiliary Nurse Midwifery');">Enquire Now →</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Why Choose Study Care for Medical -->
+    <section class="section pale">
+      <div class="section-title-wrap">
+        <p class="eyebrow">OUR COMMITMENT</p>
+        <h2>Why Consult Study Care for Medical?</h2>
+        <p>We provide transparent, step-by-step guidance so every student finds the right college without confusion.</p>
+      </div>
+      <div class="features">
+        <div>
+          <b>✓ Verified Colleges</b>
+          <span>Guidance only for INC, NMC, and state council-recognized institutions.</span>
+        </div>
+        <div>
+          <b>✓ Transparent Fee Structures</b>
+          <span>No hidden costs; complete clarity on tuition, hostel, and clinical charges.</span>
+        </div>
+        <div>
+          <b>✓ Scholarship &amp; Loan Support</b>
+          <span>Assistance with educational loan documentation and merit scholarships.</span>
+        </div>
+        <div>
+          <b>✓ Dedicated Counselor</b>
+          <span>One-on-one personal guidance from application to hostel joining.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Medical Enquiry Form -->
+    <section id="apply" class="section apply">
+      <div>
+        <p class="eyebrow">MEDICAL ADMISSION ENQUIRY</p>
+        <h2>Apply for Medical &amp; Nursing Guidance</h2>
+        <p>Select your desired medical course and submit your details. Our admission counselors will connect with you immediately via WhatsApp.</p>
+        
+        <div class="counselor-callout">
+          <b>Need urgent admission help?</b>
+          <p>Call our counselors directly: <a href="tel:9400941937">9400941937</a> / <a href="tel:9400653357">9400653357</a></p>
+        </div>
+      </div>
+
+      <form id="form">
+        <input id="name" placeholder="Student full name" required>
+        <input id="phone" type="tel" placeholder="WhatsApp phone number" required>
+        <select id="course" required>
+          <option value="">Select Medical Course</option>
+          <option value="MBBS">MBBS</option>
+          <option value="BSc Nursing">BSc Nursing</option>
+          <option value="General Nursing">General Nursing (GNM)</option>
+          <option value="Auxiliary Nurse Midwifery">Auxiliary Nurse Midwifery (ANM)</option>
+        </select>
+        <textarea id="msg" placeholder="Your enquiry / preferred college or state..."></textarea>
+        <button class="btn" type="submit">Submit Medical Enquiry →</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand">
+      <img src="logo-horizontal.png" alt="Study Care Education Consultation" class="footer-logo">
+      <span>Your Dream • Our Support</span>
+    </div>
+    <small>© 2026 Study Care Education Consultation. All rights reserved.</small>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <a href="https://wa.me/919400941937?text=Hi%20Study%20Care,%20I%20would%20like%20to%20enquire%20about%20medical%20courses" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat with Study Care on WhatsApp">
+    <span class="whatsapp-icon">💬</span>
+    <span class="whatsapp-text">Chat on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    function selectCourse(courseName) {
+      const select = document.getElementById('course');
+      if (select) {
+        select.value = courseName;
+      }
+      const applySection = document.getElementById('apply');
+      if (applySection) {
+        applySection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>

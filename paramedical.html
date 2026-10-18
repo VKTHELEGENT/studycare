@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Paramedical &amp; Allied Health Courses | Study Care Education Consultation</title>
+  <meta name="description" content="Explore top Paramedical and Allied Health Science degree courses including MLT, Radiology, Operation Theatre, Physiotherapy, Neurophysiology, and more with Study Care.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html#home" class="brand" aria-label="Study Care Education Consultation">
+      <img src="logo-horizontal.png" alt="Study Care Education Consultation Logo" class="brand-logo">
+    </a>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+    <nav id="primaryNav" aria-label="Primary navigation">
+      <div class="mobile-nav-header">
+        <img src="logo-horizontal.png" alt="Study Care" class="mobile-nav-logo">
+        <button type="button" class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#courses" class="active">Courses</a>
+      <a href="index.html#colleges">Colleges</a>
+      <a href="#apply">Apply</a>
+      <a href="index.html#contact">Contact</a>
+      <div class="mobile-nav-cta">
+        <a class="btn" href="#apply">Enquire Now</a>
+        <a class="btn-whatsapp-mobile" href="https://wa.me/919400941937?text=Hi%20Study%20Care,%20I%20would%20like%20to%20enquire%20about%20paramedical%20courses" target="_blank" rel="noopener">
+          <span>💬 WhatsApp Us</span>
+        </a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn header-btn" href="#apply">Enquire Now</a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Paramedical Hero / Header -->
+    <section class="page-banner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <a href="index.html#courses">Courses</a> <span>/</span> <b>Paramedical</b>
+      </div>
+      <p class="eyebrow">PARAMEDICAL &amp; ALLIED HEALTH SCIENCES</p>
+      <h1>Paramedical <em>Programs</em></h1>
+      <p class="banner-desc">
+        Allied healthcare professionals are the backbone of modern diagnostics, surgical assistance, and rehabilitation medicine. Explore our 20 specialized paramedical programs with direct admission guidance for top clinical colleges.
+      </p>
+      <div class="banner-cta">
+        <a href="#courses-grid" class="btn">Explore 20 Courses ↓</a>
+        <a href="index.html#courses" class="btn-secondary">← Back to All Courses</a>
+      </div>
+    </section>
+
+    <!-- The 20 Course Boxes -->
+    <section id="courses-grid" class="section medical-section">
+      <div class="section-title-wrap">
+        <p class="eyebrow">SPECIALIZED COURSES</p>
+        <h2>Explore All 20 Paramedical Courses</h2>
+        <p>Click on any course below to select it and submit an admission enquiry.</p>
+
+        <!-- Quick Search Bar -->
+        <div class="course-search-bar">
+          <input type="text" id="courseSearch" placeholder="🔍 Search courses (e.g. MLT, Radiology, Neuro, Physiotherapy)..." oninput="filterCourses()">
+        </div>
+      </div>
+
+      <div class="medical-grid" id="paramedicalGrid">
+        <!-- 1. B.Sc. Medical Laboratory Technology -->
+        <article class="med-box" data-name="B.Sc. Medical Laboratory Technology" onclick="selectCourse('B.Sc. Medical Laboratory Technology')">
+          <span class="med-icon">🔬</span>
+          <h3>B.Sc. Medical Laboratory Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Medical Laboratory Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 2. B.Sc. Medical Laboratory Science -->
+        <article class="med-box" data-name="B.Sc. Medical Laboratory Science" onclick="selectCourse('B.Sc. Medical Laboratory Science')">
+          <span class="med-icon">🧪</span>
+          <h3>B.Sc. Medical Laboratory Science</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Medical Laboratory Science');">Enquire Now →</button>
+        </article>
+
+        <!-- 3. B.Sc. Clinical Laboratory Science -->
+        <article class="med-box" data-name="B.Sc. Clinical Laboratory Science" onclick="selectCourse('B.Sc. Clinical Laboratory Science')">
+          <span class="med-icon">🧬</span>
+          <h3>B.Sc. Clinical Laboratory Science</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Clinical Laboratory Science');">Enquire Now →</button>
+        </article>
+
+        <!-- 4. B.Sc. Medical Laboratory and Molecular Diagnostics -->
+        <article class="med-box" data-name="B.Sc. Medical Laboratory and Molecular Diagnostics" onclick="selectCourse('B.Sc. Medical Laboratory and Molecular Diagnostics')">
+          <span class="med-icon">🧫</span>
+          <h3>B.Sc. Medical Laboratory and Molecular Diagnostics</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Medical Laboratory and Molecular Diagnostics');">Enquire Now →</button>
+        </article>
+
+        <!-- 5. B.Sc. Medical Radiology and Imaging Technology -->
+        <article class="med-box" data-name="B.Sc. Medical Radiology and Imaging Technology" onclick="selectCourse('B.Sc. Medical Radiology and Imaging Technology')">
+          <span class="med-icon">🩻</span>
+          <h3>B.Sc. Medical Radiology and Imaging Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Medical Radiology and Imaging Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 6. B.Sc. Medical Imaging Technology -->
+        <article class="med-box" data-name="B.Sc. Medical Imaging Technology" onclick="selectCourse('B.Sc. Medical Imaging Technology')">
+          <span class="med-icon">📷</span>
+          <h3>B.Sc. Medical Imaging Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Medical Imaging Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 7. B.Sc. Radiology and Imaging Technology -->
+        <article class="med-box" data-name="B.Sc. Radiology and Imaging Technology" onclick="selectCourse('B.Sc. Radiology and Imaging Technology')">
+          <span class="med-icon">🩻</span>
+          <h3>B.Sc. Radiology and Imaging Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Radiology and Imaging Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 8. B.Sc. Radiotherapy Technology -->
+        <article class="med-box" data-name="B.Sc. Radiotherapy Technology" onclick="selectCourse('B.Sc. Radiotherapy Technology')">
+          <span class="med-icon">☢️</span>
+          <h3>B.Sc. Radiotherapy Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Radiotherapy Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 9. B.Sc. Nuclear Medicine Technology -->
+        <article class="med-box" data-name="B.Sc. Nuclear Medicine Technology" onclick="selectCourse('B.Sc. Nuclear Medicine Technology')">
+          <span class="med-icon">⚛️</span>
+          <h3>B.Sc. Nuclear Medicine Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Nuclear Medicine Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 10. B.Sc. Operation Theatre Technology -->
+        <article class="med-box" data-name="B.Sc. Operation Theatre Technology" onclick="selectCourse('B.Sc. Operation Theatre Technology')">
+          <span class="med-icon">🏥</span>
+          <h3>B.Sc. Operation Theatre Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Operation Theatre Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 11. B.Sc. Anaesthesia Technology -->
+        <article class="med-box" data-name="B.Sc. Anaesthesia Technology" onclick="selectCourse('B.Sc. Anaesthesia Technology')">
+          <span class="med-icon">💉</span>
+          <h3>B.Sc. Anaesthesia Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Anaesthesia Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 12. B.Sc. Anaesthesia and Operation Theatre Technology -->
+        <article class="med-box" data-name="B.Sc. Anaesthesia and Operation Theatre Technology" onclick="selectCourse('B.Sc. Anaesthesia and Operation Theatre Technology')">
+          <span class="med-icon">🩺</span>
+          <h3>B.Sc. Anaesthesia and Operation Theatre Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Anaesthesia and Operation Theatre Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 13. B.Sc. Surgical Technology -->
+        <article class="med-box" data-name="B.Sc. Surgical Technology" onclick="selectCourse('B.Sc. Surgical Technology')">
+          <span class="med-icon">🩹</span>
+          <h3>B.Sc. Surgical Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Surgical Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 14. Bachelor of Physiotherapy -->
+        <article class="med-box" data-name="Bachelor of Physiotherapy" onclick="selectCourse('Bachelor of Physiotherapy')">
+          <span class="med-icon">🏃</span>
+          <h3>Bachelor of Physiotherapy</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('Bachelor of Physiotherapy');">Enquire Now →</button>
+        </article>
+
+        <!-- 15. Bachelor of Occupational Therapy -->
+        <article class="med-box" data-name="Bachelor of Occupational Therapy" onclick="selectCourse('Bachelor of Occupational Therapy')">
+          <span class="med-icon">🤲</span>
+          <h3>Bachelor of Occupational Therapy</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('Bachelor of Occupational Therapy');">Enquire Now →</button>
+        </article>
+
+        <!-- 16. Bachelor of Prosthetics and Orthotics -->
+        <article class="med-box" data-name="Bachelor of Prosthetics and Orthotics" onclick="selectCourse('Bachelor of Prosthetics and Orthotics')">
+          <span class="med-icon">🦾</span>
+          <h3>Bachelor of Prosthetics and Orthotics</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('Bachelor of Prosthetics and Orthotics');">Enquire Now →</button>
+        </article>
+
+        <!-- 17. B.Sc. Neurophysiology Technology -->
+        <article class="med-box" data-name="B.Sc. Neurophysiology Technology" onclick="selectCourse('B.Sc. Neurophysiology Technology')">
+          <span class="med-icon">🧠</span>
+          <h3>B.Sc. Neurophysiology Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Neurophysiology Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 18. B.Sc. Neuro Electrophysiology Technology -->
+        <article class="med-box" data-name="B.Sc. Neuro Electrophysiology Technology" onclick="selectCourse('B.Sc. Neuro Electrophysiology Technology')">
+          <span class="med-icon">⚡</span>
+          <h3>B.Sc. Neuro Electrophysiology Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Neuro Electrophysiology Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 19. B.Sc. EEG and EMG Technology -->
+        <article class="med-box" data-name="B.Sc. EEG and EMG Technology" onclick="selectCourse('B.Sc. EEG and EMG Technology')">
+          <span class="med-icon">📈</span>
+          <h3>B.Sc. EEG and EMG Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. EEG and EMG Technology');">Enquire Now →</button>
+        </article>
+
+        <!-- 20. B.Sc. Neurodiagnostic Technology -->
+        <article class="med-box" data-name="B.Sc. Neurodiagnostic Technology" onclick="selectCourse('B.Sc. Neurodiagnostic Technology')">
+          <span class="med-icon">🔬</span>
+          <h3>B.Sc. Neurodiagnostic Technology</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Sc. Neurodiagnostic Technology');">Enquire Now →</button>
+        </article>
+      </div>
+
+      <p id="noMatchesMsg" style="display:none; text-align:center; padding:40px; font-size:16px; color:#617784;">
+        No courses found matching your search. <button type="button" onclick="clearSearch()" style="background:none;border:none;color:#079b9b;font-weight:700;cursor:pointer;text-decoration:underline;">Reset Search</button>
+      </p>
+    </section>
+
+    <!-- Why Choose Study Care for Paramedical -->
+    <section class="section pale">
+      <div class="section-title-wrap">
+        <p class="eyebrow">CAREER ASSURANCE</p>
+        <h2>Why Study Care for Paramedical Admissions?</h2>
+        <p>Paramedical and allied health programs require high-quality clinical hospital exposure. We ensure you choose recognized, high-standard institutions.</p>
+      </div>
+      <div class="features">
+        <div>
+          <b>✓ Affiliated Teaching Hospitals</b>
+          <span>Guidance into colleges with 500+ bed NABH/NABL-accredited super-specialty hospitals.</span>
+        </div>
+        <div>
+          <b>✓ High Clinical Placement</b>
+          <span>Direct pathways to diagnostics labs, trauma centres, ICUs, and rehabilitation hospitals.</span>
+        </div>
+        <div>
+          <b>✓ Recognized Certifications</b>
+          <span>Degrees awarded by government-recognized health science universities and state councils.</span>
+        </div>
+        <div>
+          <b>✓ Complete Admission Guidance</b>
+          <span>Merit seat counseling, documentation verification, scholarship, and hostel booking support.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paramedical Enquiry Form -->
+    <section id="apply" class="section apply">
+      <div>
+        <p class="eyebrow">PARAMEDICAL ADMISSION ENQUIRY</p>
+        <h2>Apply for Paramedical Guidance</h2>
+        <p>Select your preferred course and submit your enquiry. Our admission experts will guide you immediately via WhatsApp.</p>
+        
+        <div class="counselor-callout">
+          <b>Need immediate guidance?</b>
+          <p>Talk directly to our counselors: <a href="tel:9400941937">9400941937</a> / <a href="tel:9400653357">9400653357</a></p>
+        </div>
+      </div>
+
+      <form id="form">
+        <input id="name" placeholder="Student full name" required>
+        <input id="phone" type="tel" placeholder="WhatsApp phone number" required>
+        <select id="course" required>
+          <option value="">Select Paramedical Course</option>
+          <option value="B.Sc. Medical Laboratory Technology">B.Sc. Medical Laboratory Technology</option>
+          <option value="B.Sc. Medical Laboratory Science">B.Sc. Medical Laboratory Science</option>
+          <option value="B.Sc. Clinical Laboratory Science">B.Sc. Clinical Laboratory Science</option>
+          <option value="B.Sc. Medical Laboratory and Molecular Diagnostics">B.Sc. Medical Laboratory and Molecular Diagnostics</option>
+          <option value="B.Sc. Medical Radiology and Imaging Technology">B.Sc. Medical Radiology and Imaging Technology</option>
+          <option value="B.Sc. Medical Imaging Technology">B.Sc. Medical Imaging Technology</option>
+          <option value="B.Sc. Radiology and Imaging Technology">B.Sc. Radiology and Imaging Technology</option>
+          <option value="B.Sc. Radiotherapy Technology">B.Sc. Radiotherapy Technology</option>
+          <option value="B.Sc. Nuclear Medicine Technology">B.Sc. Nuclear Medicine Technology</option>
+          <option value="B.Sc. Operation Theatre Technology">B.Sc. Operation Theatre Technology</option>
+          <option value="B.Sc. Anaesthesia Technology">B.Sc. Anaesthesia Technology</option>
+          <option value="B.Sc. Anaesthesia and Operation Theatre Technology">B.Sc. Anaesthesia and Operation Theatre Technology</option>
+          <option value="B.Sc. Surgical Technology">B.Sc. Surgical Technology</option>
+          <option value="Bachelor of Physiotherapy">Bachelor of Physiotherapy</option>
+          <option value="Bachelor of Occupational Therapy">Bachelor of Occupational Therapy</option>
+          <option value="Bachelor of Prosthetics and Orthotics">Bachelor of Prosthetics and Orthotics</option>
+          <option value="B.Sc. Neurophysiology Technology">B.Sc. Neurophysiology Technology</option>
+          <option value="B.Sc. Neuro Electrophysiology Technology">B.Sc. Neuro Electrophysiology Technology</option>
+          <option value="B.Sc. EEG and EMG Technology">B.Sc. EEG and EMG Technology</option>
+          <option value="B.Sc. Neurodiagnostic Technology">B.Sc. Neurodiagnostic Technology</option>
+        </select>
+        <textarea id="msg" placeholder="Your enquiry / preferred college, location, or question..."></textarea>
+        <button class="btn" type="submit">Submit Paramedical Enquiry →</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand">
+      <img src="logo-horizontal.png" alt="Study Care Education Consultation" class="footer-logo">
+      <span>Your Dream • Our Support</span>
+    </div>
+    <small>© 2026 Study Care Education Consultation. All rights reserved.</small>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <a href="https://wa.me/919400941937?text=Hi%20Study%20Care,%20I%20would%20like%20to%20enquire%20about%20paramedical%20courses" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat with Study Care on WhatsApp">
+    <span class="whatsapp-icon">💬</span>
+    <span class="whatsapp-text">Chat on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    function selectCourse(courseName) {
+      const select = document.getElementById('course');
+      if (select) {
+        select.value = courseName;
+      }
+      const applySection = document.getElementById('apply');
+      if (applySection) {
+        applySection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function filterCourses() {
+      const query = document.getElementById('courseSearch').value.toLowerCase().trim();
+      const boxes = document.querySelectorAll('#paramedicalGrid .med-box');
+      let visibleCount = 0;
+      boxes.forEach(box => {
+        const name = box.getAttribute('data-name').toLowerCase();
+        if (name.includes(query)) {
+          box.style.display = 'flex';
+          visibleCount++;
+        } else {
+          box.style.display = 'none';
+        }
+      });
+      const noMsg = document.getElementById('noMatchesMsg');
+      if (noMsg) {
+        noMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('courseSearch');
+      if (input) {
+        input.value = '';
+        filterCourses();
+      }
+    }
+  </script>
+</body>
+</html>

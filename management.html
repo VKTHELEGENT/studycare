@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Management &amp; Commerce Courses | Study Care Education Consultation</title>
+  <meta name="description" content="Explore top BBA Aviation Management and B.Com Logistics & Supply Chain courses with CA Foundation and ACCA (UK) certifications at Study Care.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html#home" class="brand" aria-label="Study Care Education Consultation">
+      <img src="logo-horizontal.png" alt="Study Care Education Consultation Logo" class="brand-logo">
+    </a>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+    <nav id="primaryNav" aria-label="Primary navigation">
+      <div class="mobile-nav-header">
+        <img src="logo-horizontal.png" alt="Study Care" class="mobile-nav-logo">
+        <button type="button" class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#courses" class="active">Courses</a>
+      <a href="index.html#colleges">Colleges</a>
+      <a href="#apply">Apply</a>
+      <a href="index.html#contact">Contact</a>
+      <div class="mobile-nav-cta">
+        <a class="btn" href="#apply">Enquire Now</a>
+        <a class="btn-whatsapp-mobile" href="https://wa.me/919400941937?text=Hi%20Study%20Care,%20I%20would%20like%20to%20enquire%20about%20management%20courses" target="_blank" rel="noopener">
+          <span>💬 WhatsApp Us</span>
+        </a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn header-btn" href="#apply">Enquire Now</a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Management Hero / Banner -->
+    <section class="page-banner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <a href="index.html#courses">Courses</a> <span>/</span> <b>Management Studies</b>
+      </div>
+      <p class="eyebrow">MANAGEMENT &amp; COMMERCE GUIDANCE</p>
+      <h1>Management &amp; Commerce <em>Programs</em></h1>
+      <p class="banner-desc">
+        Prepare for executive leadership in international aviation, supply chain logistics, business analytics, and global finance. Explore specialized BBA and B.Com degree programs integrated with leading global professional certifications.
+      </p>
+      <div class="banner-cta">
+        <a href="#courses-grid" class="btn">Explore 9 Courses ↓</a>
+        <a href="index.html#courses" class="btn-secondary">← Back to All Courses</a>
+      </div>
+    </section>
+
+    <!-- The 9 Course Boxes -->
+    <section id="courses-grid" class="section medical-section">
+      <div class="section-title-wrap">
+        <p class="eyebrow">SPECIALIZED INDUSTRY DEGREES</p>
+        <h2>Select Your Business &amp; Commerce Course</h2>
+        <p>Comprehensive admission assistance for high-demand Aviation, Logistics, CA &amp; ACCA integrated programs.</p>
+      </div>
+
+      <div class="management-grid">
+        <!-- 1. BBA (Bachelor of Business Administration) -->
+        <article class="med-box" onclick="selectCourse('BBA (Bachelor of Business Administration)')">
+          <span class="med-icon">💼</span>
+          <h3>BBA (Bachelor of Business Administration)</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('BBA (Bachelor of Business Administration)');">Enquire Now →</button>
+        </article>
+
+        <!-- 2. BHM (Bachelor of Hotel/Hospitality Management) -->
+        <article class="med-box" onclick="selectCourse('BHM (Bachelor of Hotel/Hospitality Management)')">
+          <span class="med-icon">🏨</span>
+          <h3>BHM (Bachelor of Hotel/Hospitality Management)</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('BHM (Bachelor of Hotel/Hospitality Management)');">Enquire Now →</button>
+        </article>
+
+        <!-- 3. B.Com (Bachelor of Commerce) -->
+        <article class="med-box" onclick="selectCourse('B.Com (Bachelor of Commerce)')">
+          <span class="med-icon">📈</span>
+          <h3>B.Com (Bachelor of Commerce)</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Com (Bachelor of Commerce)');">Enquire Now →</button>
+        </article>
+
+        <!-- 4. BMS (Bachelor of Management Studies) -->
+        <article class="med-box" onclick="selectCourse('BMS (Bachelor of Management Studies)')">
+          <span class="med-icon">🏛️</span>
+          <h3>BMS (Bachelor of Management Studies)</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('BMS (Bachelor of Management Studies)');">Enquire Now →</button>
+        </article>
+
+        <!-- 5. BBA (Aviation Management) -->
+        <article class="med-box" onclick="selectCourse('BBA (Aviation Management)')">
+          <span class="med-icon">✈️</span>
+          <h3>BBA (Aviation Management)</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('BBA (Aviation Management)');">Enquire Now →</button>
+        </article>
+
+        <!-- 2. BBA (Aviation Management) + Logistics & Cargo Management -->
+        <article class="med-box" onclick="selectCourse('BBA (Aviation Management) + Logistics & Cargo Management')">
+          <span class="med-icon">🛫</span>
+          <h3>BBA (Aviation Management) + Logistics &amp; Cargo Management</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('BBA (Aviation Management) + Logistics & Cargo Management');">Enquire Now →</button>
+        </article>
+
+        <!-- 3. BBA (Aviation Management) + IBM Business Intelligence -->
+        <article class="med-box" onclick="selectCourse('BBA (Aviation Management) + IBM Business Intelligence')">
+          <span class="med-icon">📊</span>
+          <h3>BBA (Aviation Management) + IBM Business Intelligence</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('BBA (Aviation Management) + IBM Business Intelligence');">Enquire Now →</button>
+        </article>
+
+        <!-- 4. B.Com (General) + CA Foundation -->
+        <article class="med-box" onclick="selectCourse('B.Com (General) + CA Foundation')">
+          <span class="med-icon">📈</span>
+          <h3>B.Com (General) + CA Foundation</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Com (General) + CA Foundation');">Enquire Now →</button>
+        </article>
+
+        <!-- 5. B.Com (General) + ACCA (UK) -->
+        <article class="med-box" onclick="selectCourse('B.Com (General) + ACCA (UK)')">
+          <span class="med-icon">🌐</span>
+          <h3>B.Com (General) + ACCA (UK)</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Com (General) + ACCA (UK)');">Enquire Now →</button>
+        </article>
+
+        <!-- 6. B.Com (Logistics and Supply Chain Management) -->
+        <article class="med-box" onclick="selectCourse('B.Com (Logistics and Supply Chain Management)')">
+          <span class="med-icon">🚢</span>
+          <h3>B.Com (Logistics and Supply Chain Management)</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Com (Logistics and Supply Chain Management)');">Enquire Now →</button>
+        </article>
+
+        <!-- 7. B.Com (Logistics and Supply Chain Management) + Tally Prime & GST Certification -->
+        <article class="med-box" onclick="selectCourse('B.Com (Logistics and Supply Chain Management) + Tally Prime & GST Certification')">
+          <span class="med-icon">🧾</span>
+          <h3>B.Com (Logistics &amp; Supply Chain Management) + Tally Prime &amp; GST Certification</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Com (Logistics and Supply Chain Management) + Tally Prime & GST Certification');">Enquire Now →</button>
+        </article>
+
+        <!-- 8. B.Com (Logistics and Supply Chain Management) + CA Foundation -->
+        <article class="med-box" onclick="selectCourse('B.Com (Logistics and Supply Chain Management) + CA Foundation')">
+          <span class="med-icon">📑</span>
+          <h3>B.Com (Logistics &amp; Supply Chain Management) + CA Foundation</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Com (Logistics and Supply Chain Management) + CA Foundation');">Enquire Now →</button>
+        </article>
+
+        <!-- 9. B.Com (Logistics and Supply Chain Management) + ACCA (UK) -->
+        <article class="med-box" onclick="selectCourse('B.Com (Logistics and Supply Chain Management) + ACCA (UK)')">
+          <span class="med-icon">💼</span>
+          <h3>B.Com (Logistics &amp; Supply Chain Management) + ACCA (UK)</h3>
+          <button type="button" class="btn med-apply-btn" onclick="event.stopPropagation(); selectCourse('B.Com (Logistics and Supply Chain Management) + ACCA (UK)');">Enquire Now →</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Why Choose Study Care for Management -->
+    <section class="section pale">
+      <div class="section-title-wrap">
+        <p class="eyebrow">CORPORATE EXCELLENCE</p>
+        <h2>Why Study Care for Management &amp; Commerce?</h2>
+        <p>We connect ambitious students with top business schools and universities that offer real industry internships, professional certifications, and corporate placements.</p>
+      </div>
+      <div class="features">
+        <div>
+          <b>✓ Industry Certifications</b>
+          <span>Degree programs integrated with global bodies like ACCA (UK), ICAI (CA Foundation), and IBM.</span>
+        </div>
+        <div>
+          <b>✓ Practical Airport &amp; Port Visits</b>
+          <span>Aviation &amp; Logistics courses with direct airport ground-handling and seaport logistics training.</span>
+        </div>
+        <div>
+          <b>✓ Campus Placements</b>
+          <span>Dedicated placement cell connections with top airlines, multinational logistics firms, and Big 4 accounting firms.</span>
+        </div>
+        <div>
+          <b>✓ Comprehensive Counseling</b>
+          <span>Guidance on college rankings, fee structures, educational loans, and hostel accommodations.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission Enquiry Form -->
+    <section id="apply" class="section apply">
+      <div>
+        <p class="eyebrow">ADMISSION ENQUIRY</p>
+        <h2>Apply for Management &amp; Commerce Guidance</h2>
+        <p>Select your desired course and submit your details. Our expert educational counselors will guide you through admissions, colleges, and scholarships via WhatsApp.</p>
+        
+        <div class="counselor-callout">
+          <b>Need immediate admission guidance?</b>
+          <p>Contact our counselors directly: <a href="tel:9400941937">9400941937</a> / <a href="tel:9400653357">9400653357</a></p>
+        </div>
+      </div>
+
+      <form id="form">
+        <input id="name" placeholder="Student full name" required>
+        <input id="phone" type="tel" placeholder="WhatsApp phone number" required>
+        <select id="course" required>
+          <option value="">Select Management / Commerce Course</option>
+          <option value="BBA (Bachelor of Business Administration)">BBA (Bachelor of Business Administration)</option>
+          <option value="BHM (Bachelor of Hotel/Hospitality Management)">BHM (Bachelor of Hotel/Hospitality Management)</option>
+          <option value="B.Com (Bachelor of Commerce)">B.Com (Bachelor of Commerce)</option>
+          <option value="BMS (Bachelor of Management Studies)">BMS (Bachelor of Management Studies)</option>
+          <option value="BBA (Aviation Management)">BBA (Aviation Management)</option>
+          <option value="BBA (Aviation Management) + Logistics & Cargo Management">BBA (Aviation Management) + Logistics &amp; Cargo Management</option>
+          <option value="BBA (Aviation Management) + IBM Business Intelligence">BBA (Aviation Management) + IBM Business Intelligence</option>
+          <option value="B.Com (General) + CA Foundation">B.Com (General) + CA Foundation</option>
+          <option value="B.Com (General) + ACCA (UK)">B.Com (General) + ACCA (UK)</option>
+          <option value="B.Com (Logistics and Supply Chain Management)">B.Com (Logistics and Supply Chain Management)</option>
+          <option value="B.Com (Logistics and Supply Chain Management) + Tally Prime & GST Certification">B.Com (Logistics and Supply Chain Management) + Tally Prime &amp; GST Certification</option>
+          <option value="B.Com (Logistics and Supply Chain Management) + CA Foundation">B.Com (Logistics and Supply Chain Management) + CA Foundation</option>
+          <option value="B.Com (Logistics and Supply Chain Management) + ACCA (UK)">B.Com (Logistics and Supply Chain Management) + ACCA (UK)</option>
+        </select>
+        <textarea id="msg" placeholder="Your enquiry / preferred college, location, or question..."></textarea>
+        <button class="btn" type="submit">Submit Enquiry →</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand">
+      <img src="logo-horizontal.png" alt="Study Care Education Consultation" class="footer-logo">
+      <span>Your Dream • Our Support</span>
+    </div>
+    <small>© 2026 Study Care Education Consultation. All rights reserved.</small>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <a href="https://wa.me/919400941937?text=Hi%20Study%20Care,%20I%20would%20like%20to%20enquire%20about%20management%20courses" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat with Study Care on WhatsApp">
+    <span class="whatsapp-icon">💬</span>
+    <span class="whatsapp-text">Chat on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    function selectCourse(courseName) {
+      const select = document.getElementById('course');
+      if (select) {
+        select.value = courseName;
+      }
+      const applySection = document.getElementById('apply');
+      if (applySection) {
+        applySection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>
